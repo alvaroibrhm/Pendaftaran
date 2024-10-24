@@ -1,0 +1,119 @@
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #008080;
+    padding: 10px 20px;
+    color: white;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    transition: opacity 0.3s;
+}
+
+.nav-links li a i {
+    margin-right: 8px; /* Jarak antara ikon dan teks */
+}
+
+.nav-links li a:hover {
+    opacity: 0.8;
+}
+
+/* Profile Dropdown */
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.profile-pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    display: none;
+    flex-direction: column;
+    min-width: 150px;
+    padding: 10px 0;
+    z-index: 10;
+}
+
+.dropdown-menu.show {
+    display: flex;
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    display: block;
+    transition: background 0.3s;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f4f4f4;
+}
+
+/* Main Container */
+.main-container {
+    display: flex;
+    height: calc(100vh - 50px);
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 20px;
+}
+
+/* Content */
+.content {
+    width: 100%;
+    padding: 20px;
+    overflow-y: auto;
+    max-width: 1200px;
+}
+
+.announcement {
+    background-color: #eaf4f4;
+    padding: 15px;
+    border-left: 5px solid #008080;
+    margin-bottom: 20px;
+}
+
+.info-section {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.info-box, .clock, .courses {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 300px;
+}
